@@ -1,4 +1,3 @@
-import random
 from wariorlib import Warrior, Fight
 
 

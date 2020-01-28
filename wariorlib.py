@@ -1,10 +1,6 @@
 import random
 import time
 
-
-random
-
-
 class Warrior:
     def setAll(self, name, race, weapon):
         if type(name) == list:
