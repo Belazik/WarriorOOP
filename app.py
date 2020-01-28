@@ -2,5 +2,13 @@ import random
 from wariorlib import Warrior, Fight
 
 
-count_warriors = [i for i in range(1,random.randint(2,5))]
-current_warrior = []
+
+weapon = ['sword', 'knife', 'hands']
+race = ['niger', 'vegan', 'hipster']
+name = ['BillyG', 'Thunder', 'Morgenshtern', 'Yarik']
+a = Warrior()
+warriorOne = a.setAll(name, race, weapon)
+b = Warrior()
+warriorTwo = b.setAll(name, race, weapon)
+fight = Fight()
+fight.start(warriorOne, warriorTwo)
