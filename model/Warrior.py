@@ -16,7 +16,9 @@ class Warrior:
     race = Race
     weapon = Weapon
 
-    def __init__(self, race, weapon, name=DEFAULT_NAME):
+    def __init__(self, race, name=DEFAULT_NAME):
         self.race = race
-        self.weapon = weapon
         self.name = name
+
+    def getDamage(self):
+        return self.weapon.getDamage(strength=self.race.strength, dexterity=self.race.dexterity)
